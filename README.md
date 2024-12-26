@@ -1,9 +1,9 @@
 
 ---
 
-# **Shopping List App**
+# **Grocy**
 
-The **Shopping List App** is a Flutter-based mobile application designed to help users manage their shopping items efficiently. This intuitive and responsive app allows users to add, view, and organize a list of items in a simple yet effective way. It demonstrates core concepts of Flutter development, such as user input handling, state management, and UI building using Material Design components.
+A flutter-based mobile application designed to help users manage their shopping items efficiently. This intuitive and responsive app allows users to add, view, and organize a list of items in a simple yet effective way. It demonstrates core concepts of Flutter development, such as user input handling, state management, and UI building using Material Design components.
 
 This app is perfect for beginner developers looking to understand Flutter and Dart, as well as for users who want a lightweight and effective tool for keeping track of their shopping needs.
 
