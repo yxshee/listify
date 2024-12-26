@@ -140,8 +140,16 @@ This app can be used for:
 
 ## **Screenshots**
 
-_(Add screenshots of the app in action to visually demonstrate the features and user interface.)_
 
+![image](https://github.com/user-attachments/assets/a4507e76-fef6-427a-9869-2960131d8fa0)
+
+![image](https://github.com/user-attachments/assets/18781ea1-7ac1-4b70-b54f-87660c615b97)
+
+![image](https://github.com/user-attachments/assets/c8e0f4f1-1949-442f-b3d4-f0dce5698004)
+
+![image](https://github.com/user-attachments/assets/ccd23f23-927b-4b15-9f90-493181c1a0a7)
+
+![image](https://github.com/user-attachments/assets/b48a38d4-1e51-49d1-bbbf-29916b1447b8)
 
 ---
 
