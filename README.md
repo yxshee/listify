@@ -142,10 +142,10 @@ This app can be used for:
 
 <p float="left">
 
-  <img width="500" src="https://github.com/user-attachments/assets/a4507e76-fef6-427a-9869-2960131d8fa0">
-  <img width="500" src="https://github.com/user-attachments/assets/18781ea1-7ac1-4b70-b54f-87660c615b97">
-  <img width="500" src="https://github.com/user-attachments/assets/c8e0f4f1-1949-442f-b3d4-f0dce5698004">
-  <img width="500" src="https://github.com/user-attachments/assets/ccd23f23-927b-4b15-9f90-493181c1a0a7">
+  <img width="450" src="https://github.com/user-attachments/assets/a4507e76-fef6-427a-9869-2960131d8fa0"> 
+  <img width="450" src="https://github.com/user-attachments/assets/18781ea1-7ac1-4b70-b54f-87660c615b97">
+  <img width="450" src="https://github.com/user-attachments/assets/c8e0f4f1-1949-442f-b3d4-f0dce5698004"> 
+  <img width="450" src="https://github.com/user-attachments/assets/ccd23f23-927b-4b15-9f90-493181c1a0a7">
   
 
 </p>
