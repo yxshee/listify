@@ -44,12 +44,13 @@ A **Flutter-based mobile application** designed to help you manage your shopping
 ```mermaid
 flowchart TD
     A[Launch App] --> B[Empty Shopping List]
-    B --> C[Tap "Add" Button]
+    B --> C[Tap ADD Button]
     C --> D[Dialog Box Opens]
     D --> E[Enter Item Name]
-    E --> F[Tap "ADD"]
+    E --> F[Tap ADD]
     F --> G[Item Added to List]
     G --> H[Scroll to View All Items]
+
 ```
 
 1. **Launch the App:**  
