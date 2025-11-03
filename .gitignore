@@ -193,10 +193,7 @@ app.*.map.json
 # Backup files
 *.bak
 *.backup
-*~
 
-
-
-.github
-.idea
-.dart_tool
+# IDE generated (not needed in repo)
+.idea/
+.dart_tool/
