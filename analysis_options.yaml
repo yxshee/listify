@@ -1,0 +1,24 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  errors:
+    missing_required_param: error
+    missing_return: error
+    invalid_annotation_target: ignore
+  exclude:
+    - "**/*.g.dart"
+    - "**/*.freezed.dart"
+    - "code/**"  # Exclude legacy code folder
+
+linter:
+  rules:
+    # Disable strict style rules that cause info warnings
+    sort_constructors_first: false
+    always_put_required_named_parameters_first: false
+    require_trailing_commas: false
+    sort_child_properties_last: false
+    
+    # Keep important safety rules
+    avoid_print: true
+    prefer_const_constructors: false
+    prefer_const_declarations: false
