@@ -32,23 +32,20 @@
     <td align="center">
       <img src="assets/screenshots/empty_state.png" width="250" alt="Empty State"/>
       <br/>
-      <b>Empty State</b>
+      <b> Empty State</b>
       <br/>
-      <sub>Clean onboarding experience</sub>
     </td>
     <td align="center">
       <img src="assets/screenshots/items_list.png" width="250" alt="Items List"/>
       <br/>
       <b>Shopping List</b>
       <br/>
-      <sub>Organized "To Buy" section</sub>
     </td>
     <td align="center">
       <img src="assets/screenshots/completed_items.png" width="250" alt="Completed"/>
       <br/>
       <b>Completed Items</b>
       <br/>
-      <sub>Active & completed sections</sub>
     </td>
   </tr>
 </table>
