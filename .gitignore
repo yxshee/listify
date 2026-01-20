@@ -1,18 +1,131 @@
-# This .gitignore is appropriate for repositories deployed to GitHub Pages and using
-# a Gemfile as specified at https://github.com/github/pages-gem#conventional
+# =====================================================
+# Flutter & Dart
+# =====================================================
 
-# Basic Jekyll gitignores (synchronize to Jekyll.gitignore)
-_site/
-.sass-cache/
-.jekyll-cache/
-.jekyll-metadata
+# Dart/Flutter generated files
+*.dart_tool/
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+build/
+.pub-cache/
+.pub/
+pubspec.lock
 
-# Additional Ruby/bundler ignore for when you run: bundle install
-/vendor
+# Generated files
+*.g.dart
+*.freezed.dart
+*.mocks.dart
 
-# Specific ignore for GitHub Pages
-# GitHub Pages will always use its own deployed version of pages-gem 
-# This means GitHub Pages will NOT use your Gemfile.lock and therefore it is
-# counterproductive to check this file into the repository.
-# Details at https://github.com/github/pages-gem/issues/768
-Gemfile.lock
+# =====================================================
+# IDE & Editor
+# =====================================================
+
+# IntelliJ/Android Studio
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# VS Code
+.vscode/
+!.vscode/settings.json
+!.vscode/launch.json
+
+# Xcode
+*.xcuserdata/
+*.xcworkspace
+!default.xcworkspace
+
+# =====================================================
+# OS Generated
+# =====================================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# =====================================================
+# Build Outputs
+# =====================================================
+
+# Android
+/android/app/debug
+/android/app/profile
+/android/app/release
+*.apk
+*.aab
+
+# iOS
+/ios/Flutter/Flutter.framework
+/ios/Flutter/Flutter.podspec
+/ios/Runner/GeneratedPluginRegistrant.*
+
+# Web
+/web/favicon.png
+
+# =====================================================
+# Testing & Coverage
+# =====================================================
+
+coverage/
+.test_coverage/
+*.lcov
+
+# =====================================================
+# Environment & Secrets
+# =====================================================
+
+.env
+.env.*
+*.env
+!.env.example
+
+# API keys & secrets
+secrets/
+*.pem
+*.p12
+*.keystore
+*.jks
+
+# Firebase
+google-services.json
+GoogleService-Info.plist
+firebase_options.dart
+
+# =====================================================
+# Misc
+# =====================================================
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+.cache/
+
+# Documentation build
+doc/api/
+
+# Flutter metadata
+.metadata
+
+# Obfuscation files
+app.*.symbols
+app.*.map.json
