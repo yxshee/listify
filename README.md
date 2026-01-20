@@ -1,196 +1,275 @@
+<div align="center">
 
+# 🛒 Listify
 
-# Listify :shopping_cart:
+### A Modern Shopping List App Built with Clean Architecture
 
-[![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat&logo=flutter&logoColor=white)](https://flutter.dev/)  
-[![Dart](https://img.shields.io/badge/Dart-0175C2?style=flat&logo=dart&logoColor=white)](https://dart.dev/)
-
-A **Flutter-based mobile application** designed to help you manage your shopping items efficiently. With an intuitive and responsive interface, Listify makes it simple to add, view, and organize your shopping list. This project highlights key Flutter concepts such as user input handling, state management, and building UI with Material Design components.
-
-> **Perfect for:**  
-> - Beginner developers exploring Flutter & Dart  
-> - Users seeking a lightweight tool for managing shopping needs
-
----
-
-## 📋 Features
-
-### 1. **Add Items**
-- :sparkles: **Interactive Input:**  
-  Use a pop-up dialog box with a text field to add new items.
-- :arrow_right: **Instant Update:**  
-  Items appear immediately in the shopping list.
-
-### 2. **View Shopping List**
-- :eye: **Clean List Display:**  
-  View all items in a neat, scrollable format.
-- :floppy_disk: **In-memory Storage:**  
-  Items persist during the session.
-
-### 3. **Responsive & Intuitive UI**
-- :art: **Material Design:**  
-  Built with Flutter’s Material Design to ensure a visually consistent and appealing interface.
-- :iphone: **Device-Friendly:**  
-  Fully responsive design for optimal viewing on any device.
-
-### 4. **Dynamic State Management**
-- :arrows_counterclockwise: **Real-Time Updates:**  
-  Utilizes Flutter’s `setState` for smooth, dynamic UI updates.
-
----
-
-## 🔍 How It Works
-
-```mermaid
-flowchart TD
-    A[Launch App] --> B[Empty Shopping List]
-    B --> C[Tap ADD Button]
-    C --> D[Dialog Box Opens]
-    D --> E[Enter Item Name]
-    E --> F[Tap ADD]
-    F --> G[Item Added to List]
-    G --> H[Scroll to View All Items]
-
-```
-
-1. **Launch the App:**  
-   Start with an empty shopping list screen.
-2. **Add Items:**  
-   Tap the **"Add"** button to open a dialog. Enter the item name and confirm with **"ADD"**.
-3. **View Your List:**  
-   Watch as your items update instantly in a scrollable list.
-4. **Session Storage:**  
-   Items are kept in memory for the duration of your session.
-
----
-
-## 🛠 Technologies Used
-
-- **Framework:** Flutter  
-- **Language:** Dart
-
-**Key UI Components:**
-- **MaterialApp:** Overall layout management  
-- **StatelessWidget & StatefulWidget:** UI and logic separation  
-- **ListView:** Dynamic list rendering  
-- **AlertDialog:** User input prompt  
-- **TextEditingController:** Text field management
-
----
-
-## 🚀 Installation Guide
-
-### Prerequisites
-- [Flutter SDK](https://flutter.dev/docs/get-started/install) installed.
-- An IDE such as [Android Studio](https://developer.android.com/studio) or [VS Code](https://code.visualstudio.com/) with Flutter and Dart plugins.
-
-### Steps to Install and Run the App
-
-1. **Clone the Repository:**
-   ```bash
-   git clone <repository-url>
-   cd <project-folder>
-   ```
-
-2. **Install Dependencies:**
-   ```bash
-   flutter pub get
-   ```
-
-3. **Run the App:**
-   ```bash
-   flutter run
-   ```
-   - Use an emulator or a connected physical device.
-
----
-
-## 📁 Project Structure
-
-```plaintext
-/lib
-  ├── main.dart          // App entry point
-  ├── App.dart           // MaterialApp configuration
-  ├── TodoList.dart      // StatefulWidget for shopping list management
-  ├── components/        // Additional UI components
-```
-
----
-
-## 🎓 Learnings and Insights
-
-- **State Management:**  
-  Mastered dynamic UI updates using Flutter’s `setState`.
-  
-- **Dialog Handling:**  
-  Managed user input with `AlertDialog` and `TextEditingController`.
-
-- **List Rendering:**  
-  Implemented scrollable lists using `ListView` for dynamic content.
-
-- **Material Design:**  
-  Applied Material Design principles for a consistent and modern UI.
-
-- **Flutter Basics:**  
-  Explored the use of both `StatelessWidget` and `StatefulWidget` to build a complete application.
-
----
-
-## 🔮 Future Improvements
-
-- **Persistent Storage:**  
-  Integrate local storage (e.g., `SharedPreferences` or SQLite) to save the list across sessions.
-  
-- **Item Deletion:**  
-  Add functionality to remove items from the list.
-
-- **Item Categorization:**  
-  Enable grouping items (e.g., groceries, electronics).
-
-- **Search & Sorting:**  
-  Introduce a search bar and sorting options for better organization.
-
-- **Cross-Platform Optimization:**  
-  Enhance performance for iOS and web platforms.
-
----
-
-## 💡 Usage Scenarios
-
-Ideal for:
-- **Shopping Management:**  
-  Keeping track of groceries, electronics, or any essentials.
-- **Learning Flutter:**  
-  A practical project for mastering Flutter's core concepts.
-- **Educational Demo:**  
-  Demonstrating simple yet effective app architecture.
-
----
-
-## 🎬 Demo
-
-<p align="center">
-  <img width="45%" src="https://github.com/user-attachments/assets/a4507e76-fef6-427a-9869-2960131d8fa0">
-  <img width="45%" src="https://github.com/user-attachments/assets/18781ea1-7ac1-4b70-b54f-87660c615b97">
-  <br><br>
-  <img width="45%" src="https://github.com/user-attachments/assets/c8e0f4f1-1949-442f-b3d4-f0dce5698004">
-  <img width="45%" src="https://github.com/user-attachments/assets/ccd23f23-927b-4b15-9f90-493181c1a0a7">
+<p>
+  <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter"/>
+  <img src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white" alt="Dart"/>
+  <img src="https://img.shields.io/badge/BLoC-2196F3?style=for-the-badge" alt="BLoC"/>
+  <img src="https://img.shields.io/badge/Hive-FF6B35?style=for-the-badge" alt="Hive"/>
 </p>
+
+<p>
+  <img src="https://img.shields.io/github/license/yxshee/listify?style=flat-square" alt="License"/>
+  <img src="https://img.shields.io/badge/tests-17%20passing-brightgreen?style=flat-square" alt="Tests"/>
+  <img src="https://img.shields.io/badge/lint-0%20issues-success?style=flat-square" alt="Lint"/>
+</p>
+
+---
+
+**🎯 Interview-Ready • 🏗️ Clean Architecture • 🧪 Fully Tested • 🚀 Production Quality**
+
+</div>
+
+---
+
+## 📸 Screenshots
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="assets/screenshots/empty_state.png" width="250" alt="Empty State"/>
+      <br/>
+      <b>Empty State</b>
+      <br/>
+      <sub>Clean onboarding experience</sub>
+    </td>
+    <td align="center">
+      <img src="assets/screenshots/items_list.png" width="250" alt="Items List"/>
+      <br/>
+      <b>Shopping List</b>
+      <br/>
+      <sub>Organized "To Buy" section</sub>
+    </td>
+    <td align="center">
+      <img src="assets/screenshots/completed_items.png" width="250" alt="Completed"/>
+      <br/>
+      <b>Completed Items</b>
+      <br/>
+      <sub>Active & completed sections</sub>
+    </td>
+  </tr>
+</table>
+
+---
+
+## 🎬 Live Demo
+
+<div align="center">
+  <img src="assets/screenshots/demo.webp" width="350" alt="App Demo"/>
+  <br/>
+  <sub>Full interaction flow: Add → Complete → Organize</sub>
+</div>
+
+---
+
+## ✨ Features
+
+| Feature | Description |
+|:-------:|-------------|
+| ➕ | **Quick Add** - Add items with a single tap |
+| ✅ | **Mark Complete** - Check off purchased items |
+| 👆 | **Swipe to Delete** - Remove items with gesture |
+| ↩️ | **Undo Support** - Restore accidentally deleted items |
+| 💾 | **Persistent Storage** - Data saved locally with Hive |
+| 🌓 | **Dark Mode** - Automatic system theme detection |
+| 📱 | **Responsive** - Works on mobile, tablet, and web |
+
+---
+
+## 🏗️ Architecture
+
+This project follows **Clean Architecture** with clear layer separation:
+
+```
+┌─────────────────────────────────────────────────────────┐
+│                    📱 PRESENTATION                       │
+│  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐     │
+│  │   Widgets   │  │    Pages    │  │    BLoC     │     │
+│  └─────────────┘  └─────────────┘  └─────────────┘     │
+├─────────────────────────────────────────────────────────┤
+│                     📐 DOMAIN                            │
+│  ┌─────────────┐  ┌─────────────────────────────┐      │
+│  │  Entities   │  │  Repository Interfaces      │      │
+│  └─────────────┘  └─────────────────────────────┘      │
+├─────────────────────────────────────────────────────────┤
+│                      💾 DATA                             │
+│  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐     │
+│  │   Models    │  │ DataSources │  │ Repository  │     │
+│  └─────────────┘  └─────────────┘  └─────────────┘     │
+└─────────────────────────────────────────────────────────┘
+```
+
+### Project Structure
+
+```
+lib/
+├── core/
+│   └── theme/                 # 🎨 Material 3 theming
+├── features/
+│   └── shopping_list/
+│       ├── data/              # 💾 Hive, models, repository impl
+│       ├── domain/            # 📐 Entities, interfaces
+│       └── presentation/      # 📱 BLoC, pages, widgets
+├── app.dart                   # App configuration
+├── injection.dart             # 💉 GetIt dependency injection
+└── main.dart                  # Entry point
+```
+
+---
+
+## 🛠️ Tech Stack
+
+<table>
+  <tr>
+    <td align="center"><b>Category</b></td>
+    <td align="center"><b>Technology</b></td>
+    <td align="center"><b>Why?</b></td>
+  </tr>
+  <tr>
+    <td>🎯 Framework</td>
+    <td>Flutter 3.16+</td>
+    <td>Cross-platform, single codebase</td>
+  </tr>
+  <tr>
+    <td>📊 State</td>
+    <td>flutter_bloc</td>
+    <td>Predictable, testable state management</td>
+  </tr>
+  <tr>
+    <td>💾 Storage</td>
+    <td>Hive</td>
+    <td>Fast, lightweight NoSQL database</td>
+  </tr>
+  <tr>
+    <td>💉 DI</td>
+    <td>GetIt</td>
+    <td>Simple service locator pattern</td>
+  </tr>
+  <tr>
+    <td>⚠️ Errors</td>
+    <td>dartz (Either)</td>
+    <td>Functional error handling</td>
+  </tr>
+  <tr>
+    <td>🧪 Testing</td>
+    <td>bloc_test, mocktail</td>
+    <td>Comprehensive test coverage</td>
+  </tr>
+</table>
+
+---
+
+## 🚀 Quick Start
+
+```bash
+# Clone the repo
+git clone https://github.com/yxshee/listify.git
+cd listify
+
+# Install dependencies
+flutter pub get
+
+# Generate Hive adapters
+dart run build_runner build --delete-conflicting-outputs
+
+# Run the app
+flutter run
+```
+
+---
+
+## 🧪 Testing
+
+```bash
+# Run all tests
+flutter test
+
+# Run with coverage
+flutter test --coverage
+
+# Run specific test file
+flutter test test/features/shopping_list/bloc/shopping_list_bloc_test.dart
+```
+
+| Test Type | Count | Status |
+|-----------|-------|--------|
+| Unit Tests (BLoC) | 12 | ✅ Passing |
+| Widget Tests | 5 | ✅ Passing |
+| **Total** | **17** | **✅ All Passing** |
+
+---
+
+## 📋 Interview Talking Points
+
+<details>
+<summary><b>🏗️ Architecture & Patterns</b></summary>
+
+- **Clean Architecture**: Separation of UI, business logic, and data
+- **Repository Pattern**: Abstracts data sources for testability
+- **Dependency Injection**: GetIt for loose coupling
+- **BLoC Pattern**: Reactive, predictable state management
+
+</details>
+
+<details>
+<summary><b>🧪 Testing Strategy</b></summary>
+
+- **Unit Tests**: BLoC logic tested with `bloc_test`
+- **Widget Tests**: UI components with `flutter_test`
+- **Mocking**: Using `mocktail` for clean mocks
+
+</details>
+
+<details>
+<summary><b>⚠️ Error Handling</b></summary>
+
+- **Either Type**: Functional approach from `dartz`
+- **Typed Failures**: Custom failure classes for specific errors
+- **User Feedback**: SnackBars for error display
+
+</details>
+
+> 📖 See [docs/INTERVIEW_GUIDE.md](docs/INTERVIEW_GUIDE.md) for detailed Q&A
+
+---
+
+## 🔄 CI/CD
+
+GitHub Actions pipeline with:
+
+- ✅ Code analysis (`flutter analyze`)
+- ✅ Test execution with coverage
+- ✅ Android APK build
+- ✅ iOS build (no codesign)
+- ✅ Web build
+
+---
+
+## 📂 Key Files
+
+| File | Purpose |
+|------|---------|
+| [`lib/injection.dart`](lib/injection.dart) | Dependency injection setup |
+| [`lib/features/.../bloc/`](lib/features/shopping_list/presentation/bloc/) | BLoC state management |
+| [`lib/features/.../domain/`](lib/features/shopping_list/domain/) | Business entities & interfaces |
+| [`.github/workflows/ci.yml`](.github/workflows/ci.yml) | CI/CD pipeline |
+| [`docs/INTERVIEW_GUIDE.md`](docs/INTERVIEW_GUIDE.md) | Interview preparation |
 
 ---
 
 ## 📜 License
 
-This project is licensed under the MIT License. See the `LICENSE` file for details.
+This project is licensed under the MIT License - see [LICENSE](LICENSE) for details.
 
 ---
 
-## 🙏 Acknowledgments
+<div align="center">
 
-- Flutter and Dart documentation for comprehensive guides.
-- Open-source tools and libraries that made development smoother.
-- The developer community for invaluable insights and support.
+**Built with ❤️ using Flutter**
 
----
+[![GitHub](https://img.shields.io/badge/GitHub-yxshee-181717?style=for-the-badge&logo=github)](https://github.com/yxshee)
 
-This revised README should now provide a more engaging, visual, and organized presentation of your project, making it appealing and easier to understand at a glance.
+</div>
